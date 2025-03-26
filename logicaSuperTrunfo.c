@@ -80,50 +80,72 @@ int main (){
     printf("  Super Poder: %.2f\n\n\n", Superpoder2);
 
 
+int opcao;
 
-//Resultado das comparações
-if (Populacao1 > Populacao2){
-    printf("A Carta 1 possui maior numero de habitantes!\n");
-} else {
-    printf("A carta 2 possui maior numero de habitantes!\n");
+printf("*** Escolha qual atributo você quer comparar: ***\n\n");
+printf("1. População\n");
+printf("2. Área\n");
+printf("3. PIB\n");
+printf("4. Numero de pontos turisticos\n");
+printf("5. Densidade Populacional\n");
+printf("6. PIB per Capita\n");
+printf("7. Super Poder\n");
+    scanf("%d", &opcao);
+
+
+switch (opcao) {
+
+    case 1:
+        if (Populacao1 > Populacao2){
+            printf("A Carta 1 venceu, pois possui maior numero de habitantes!\n");
+        } else {
+            printf("A carta 2 venceu, pois possui maior numero de habitantes!\n");
+        }
+        break;
+    case 2:
+        if (Area1 > Area2){
+            printf("A Carta 1 venceu, pois possui maior área!\n");
+        } else {
+            printf("A carta 2 venceu, pois possui maior área!\n");
+        }
+        break;
+    case 3:
+        if (PIB1 > PIB2){
+            printf("A Carta 1 venceu, pois possui maior PIB!\n");
+        } else {
+            printf("A carta 2 venceu, pois possui maior PIB!\n");
+        }
+        break;
+    case 4:
+        if (Turisticos1 > Turisticos2){
+            printf("A Carta 1 venceu, pois possui mais pontos turisticos!\n");
+        } else {
+            printf("A carta 2 venceu, pois possui mais pontos turisticos!\n");
+        }
+        break;
+    case 5:
+        if (DensidadeP1 < DensidadeP2){
+            printf("A Carta 1 venceu, pois possui menor densidade populacional!\n");
+        } else {
+            printf("A carta 2 venceu, pois possui menor densidade populacional!\n");
+        }
+        break;
+    case 6:
+        if (PIBPC1 > PIBPC2){
+            printf("A Carta 1 venceu, pois possui maior PIB per capita!\n");
+        } else {
+            printf("A carta 2 venceu, pois possui maior PIB per capita!\n");
+        }
+        break;
+    case 7:
+        if (Superpoder1 > Superpoder2){
+            printf("A Carta 1 venceu, pois possui maior Super Poder!\n");
+        } else {
+            printf("A carta 2 venceu, pois possui maior Super Poder!\n");}
+        break;
+    default:
+        printf("Opção inválida\n");
+
 }
-
-
-if (Area1 > Area2){
-    printf("A Carta 1 possui maior área!\n");
-} else {
-    printf("A carta 2 possui maior área!\n");
-}
-
-if (PIB1 > PIB2){
-    printf("A Carta 1 possui maior PIB!\n");
-} else {
-    printf("A carta 2 possui maior PIB!\n");
-}
-
-if (Turisticos1 > Turisticos2){
-    printf("A Carta 1 possui mais pontos turisticos!\n");
-} else {
-    printf("A carta 2 possui mais pontos turisticos!\n");
-}
-
-if (DensidadeP1 < DensidadeP2){
-    printf("A Carta 1 possui menor densidade populacional!\n");
-} else {
-    printf("A carta 2 possui menor densidade populacional!\n");
-}
-
-if (PIBPC1 > PIBPC2){
-    printf("A Carta 1 possui maior PIB per capita!\n");
-} else {
-    printf("A carta 2 possui maior PIB per capita!\n");
-}
-
-if (Superpoder1 > Superpoder2){
-    printf("A Carta 1 possui maior Super Poder!\n");
-} else {
-    printf("A carta 2 possui maior Super Poder!\n");
-}
-
     return 0;
 }
