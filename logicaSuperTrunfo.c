@@ -113,13 +113,13 @@ switch (opcao1) {
 
 // Comparação da segunda opção
 switch (opcao2) {
-    case 1: Res2 = (Populacao1 > Populacao2) ? Cidade1 : (Populacao1 == Populacao2) ? Empate : Cidade2; break;
-    case 2: Res2 = (Area1 > Area2) ? Cidade1 : (Area1 == Area2) ? Empate : Cidade2; break;
-    case 3: Res2 = (PIB1 > PIB2) ? Cidade1 : (PIB1 == PIB2) ? Empate : Cidade2; break;
-    case 4: Res2 = (Turisticos1 > Turisticos2) ? Cidade1 : (Turisticos1 == Turisticos2) ? Empate : Cidade2; break;
-    case 5: Res2 = (DensidadeP1 < DensidadeP2) ? Cidade1 : (DensidadeP1 == DensidadeP2) ? Empate : Cidade2; break;
-    case 6: Res2 = (PIBPC1 > PIBPC2) ? Cidade1 : (PIBPC1 == PIBPC2) ? Empate : Cidade2; break;
-    case 7: Res2 = (Superpoder1 > Superpoder2) ? Cidade1 : (Superpoder1 == Superpoder2) ? Empate : Cidade2; break;
+    case 1: Res2 = (Populacao1 > Populacao2) ? Carta1 : (Populacao1 == Populacao2) ? Empate : Carta2; break;
+    case 2: Res2 = (Area1 > Area2) ? Carta1 : (Area1 == Area2) ? Empate : Carta2; break;
+    case 3: Res2 = (PIB1 > PIB2) ? Carta1 : (PIB1 == PIB2) ? Empate : Carta2; break;
+    case 4: Res2 = (Turisticos1 > Turisticos2) ? Carta1 : (Turisticos1 == Turisticos2) ? Empate : Carta2; break;
+    case 5: Res2 = (DensidadeP1 < DensidadeP2) ? Carta1 : (DensidadeP1 == DensidadeP2) ? Empate : Carta2; break;
+    case 6: Res2 = (PIBPC1 > PIBPC2) ? Carta1 : (PIBPC1 == PIBPC2) ? Empate : Carta2; break;
+    case 7: Res2 = (Superpoder1 > Superpoder2) ? Carta1 : (Superpoder1 == Superpoder2) ? Empate : Carta2; break;
     default: printf("Opção inválida\n"); break;
 }
 
